@@ -6,7 +6,7 @@ const cors = require('cors');
 const DefaultRouter = require('./routes/index');
 const app = express();
 const port = 3000;
-const URL_CLIENT = process.env.URL_CLIENT_PROD // || process.env.URL_CLIENT_PROD;
+const URL_CLIENT = process.env.URL_CLIENT // || process.env.URL_CLIENT_PROD;
 // Enable CORS for all routes
 app.use(cors({
     origin: URL_CLIENT, // Replace with your Vue app's URL
